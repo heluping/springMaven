@@ -11,6 +11,7 @@ public class AccountsServiceImpl implements AccountsService {
     @Autowired
     AccountsDao accountsDao;
 
+    @Override
     public Accounts findById() {
         return accountsDao.findById(1);
     }
